@@ -1,0 +1,46 @@
+### GET todos los libros
+GET http://localhost:3000/libros
+
+###
+
+### GET libros ordenados por nombre
+GET http://localhost:3000/libros?sortBy=nombre
+
+###
+
+### GET libros ordenados por editorial
+GET http://localhost:3000/libros?sortBy=editorial
+
+###
+
+### GET libro por ID
+GET http://localhost:3000/libros/1
+
+###
+
+### POST crear un libro
+POST http://localhost:3000/libros
+Content-Type: application/json
+
+{
+  "nombre": "Cien años de soledad",
+  "autor": "Gabriel García Márquez",
+  "editorial": "Sudamericana"
+}
+
+###
+
+### PUT actualizar libro
+PUT http://localhost:3000/libros/1
+Content-Type: application/json
+
+{
+  "nombre": "El Principito (Edición Especial)",
+  "autor": "Antoine de Saint-Exupéry",
+  "editorial": "Planeta"
+}
+
+###
+
+### DELETE eliminar libro
+DELETE http://localhost:3000/libros/2
